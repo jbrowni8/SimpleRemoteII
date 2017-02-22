@@ -340,14 +340,27 @@
                                     <constraint firstItem="xNm-3N-aJA" firstAttribute="leading" secondItem="2ft-9p-eRq" secondAttribute="leading" id="zRb-5w-OWs"/>
                                 </constraints>
                             </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NYj-zy-Cxe">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Go to DVR" id="x5u-Vg-cdK">
+                                        <connections>
+                                            <segue destination="IJe-Uy-CW9" kind="show" id="1iH-n3-Q1I"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="xNm-3N-aJA" secondAttribute="trailing" constant="8" id="2zQ-ls-VcS"/>
                             <constraint firstItem="u2X-gQ-ffI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3QW-fU-sy7"/>
+                            <constraint firstItem="NYj-zy-Cxe" firstAttribute="leading" secondItem="u2X-gQ-ffI" secondAttribute="leading" id="6ce-9V-XC9"/>
                             <constraint firstItem="h8o-aO-pbZ" firstAttribute="top" secondItem="u2X-gQ-ffI" secondAttribute="bottom" constant="8" id="Ef5-ws-G1R"/>
                             <constraint firstItem="h8o-aO-pbZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="R9z-Pl-b0H"/>
                             <constraint firstItem="u2X-gQ-ffI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oJG-Vs-5pU"/>
+                            <constraint firstItem="NYj-zy-Cxe" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="p3m-ve-0rN"/>
+                            <constraint firstItem="NYj-zy-Cxe" firstAttribute="trailing" secondItem="u2X-gQ-ffI" secondAttribute="trailing" id="p6C-ms-gQd"/>
                             <constraint firstAttribute="trailing" secondItem="u2X-gQ-ffI" secondAttribute="trailing" id="uoF-wi-aOb"/>
                             <constraint firstItem="h8o-aO-pbZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wcR-58-SsO"/>
                         </constraints>
@@ -363,6 +376,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="r3M-CL-nUf">
+            <objects>
+                <viewController id="IJe-Uy-CW9" customClass="DVRViewController" customModule="SimpleRemote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gEM-Av-QJT"/>
+                        <viewControllerLayoutGuide type="bottom" id="z3d-Pj-scI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sbh-FS-Hhs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fkm-d3-IaF">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Go to Remote" id="9zm-a8-Dph">
+                                        <connections>
+                                            <action selector="backToRemote:" destination="IJe-Uy-CW9" id="fCK-fN-Qnf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J1z-xk-Iz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="135"/>
         </scene>
     </scenes>
 </document>

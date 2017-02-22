@@ -14,6 +14,7 @@
 		FB023D8A1E3FC3F2001E6662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB023D881E3FC3F2001E6662 /* LaunchScreen.storyboard */; };
 		FB023D951E3FC3F3001E6662 /* SimpleRemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB023D941E3FC3F3001E6662 /* SimpleRemoteTests.swift */; };
 		FB023DA01E3FC3F3001E6662 /* SimpleRemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB023D9F1E3FC3F3001E6662 /* SimpleRemoteUITests.swift */; };
+		FB9175951E5E200D00217EF8 /* DVRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9175941E5E200D00217EF8 /* DVRViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FB023D9B1E3FC3F3001E6662 /* SimpleRemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleRemoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB023D9F1E3FC3F3001E6662 /* SimpleRemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRemoteUITests.swift; sourceTree = "<group>"; };
 		FB023DA11E3FC3F3001E6662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB9175941E5E200D00217EF8 /* DVRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVRViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				FB023D7F1E3FC3F2001E6662 /* AppDelegate.swift */,
 				FB023D811E3FC3F2001E6662 /* ViewController.swift */,
+				FB9175941E5E200D00217EF8 /* DVRViewController.swift */,
 				FB023D831E3FC3F2001E6662 /* Main.storyboard */,
 				FB023D861E3FC3F2001E6662 /* Assets.xcassets */,
 				FB023D881E3FC3F2001E6662 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB023D821E3FC3F2001E6662 /* ViewController.swift in Sources */,
+				FB9175951E5E200D00217EF8 /* DVRViewController.swift in Sources */,
 				FB023D801E3FC3F2001E6662 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +516,7 @@
 				FB023DA61E3FC3F3001E6662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB023DA71E3FC3F3001E6662 /* Build configuration list for PBXNativeTarget "SimpleRemoteTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +525,7 @@
 				FB023DA91E3FC3F3001E6662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB023DAA1E3FC3F3001E6662 /* Build configuration list for PBXNativeTarget "SimpleRemoteUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +534,7 @@
 				FB023DAC1E3FC3F3001E6662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
