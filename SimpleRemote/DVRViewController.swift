@@ -9,7 +9,41 @@
 import UIKit
 
 class DVRViewController: UIViewController {
-
+    
+    @IBOutlet weak var power: UILabel!
+    @IBOutlet weak var state: UILabel!
+    @IBOutlet weak var functionsViewController: UIView!
+    @IBOutlet weak var goToRemote: UIBarButtonItem!
+    
+    @IBAction func dvrPower(_ sender: UISwitch) {
+        power.text = (sender.isOn ? "On" : "Off")
+        var enabled : Bool = false
+        if power.text=="On" {
+            enabled = true
+            state.text = "Stopped"
+            functionsViewController.isUserInteractionEnabled = enabled
+            goToRemote.isEnabled = enabled
+        } else {
+            enabled = false
+            state.text = "Off"
+            functionsViewController.isUserInteractionEnabled = enabled
+            goToRemote.isEnabled = enabled
+        }
+    }
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        if let text = sender.titleLabel {
+            if text.text == "Stop" {
+                state.text = "Stopped"
+            } else if text.text == "Pause" {
+                state.text = "Paused"
+            } else {
+                let conjunction = text.text! + "ing"
+                state.text = conjunction
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
